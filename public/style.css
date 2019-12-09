@@ -1,7 +1,18 @@
-body{
-  padding-top:80px;
-  word-wrap:break-word;
+body {
+  padding-top: 80px;
+  word-wrap: break-word;
+  background-color: black;
+  color: aliceblue;
 }
-img{
+img {
   height: 200px;
+}
+a {
+  color: white;
+}
+.btn,
+.btn-warning,
+.btn-lg {
+  background-color: aliceblue;
+  color: palevioletred;
 }

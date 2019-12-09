@@ -104,7 +104,7 @@
 										<input type="text" placeholder="situation" name="situation" class="inputbox"> 
 										<input type="text" placeholder="expected outcome" name="outcome" class="inputbox"> 
 										<!-- changed msg to date -->
-										<button type="submit">Submit</button>
+										<button type="submit"  class="primary-btn2 header-btn text-uppercase">Submit</button>
 									  </form>
 									</div>
 									<% } %>
@@ -170,7 +170,7 @@
 									<% if (user.local.email) { %>
 										  <form action="/generic" method="POST">
 											<input type="text"  name="notes" class="inputbox"> 
-											<button type="submit">Post To Notes</button>
+											<button type="submit"  class="primary-btn2 header-btn text-uppercase">Post To Notes</button>
 										  </form>
 										</div>
 										<% } %>
@@ -215,10 +215,66 @@
 			<section class="about-generic-area section-gap">
 				<div class="container border-top-generic">
 					<h3 class="about-title mb-30">Zen Solutions Agreement</h3>
+					<p>Once you sign below, you'll be taken to the home page. Please log back into your account if you wish to do so. Thank you! </p>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="img-text">
 							<!-- put text for agreement -->
+								<!-- agreement -->
+									<section>
+											<div class="container">
+												<div class="row">
+													<div class="col-lg-6 skill-left">
+														<form action="/agreement" method="POST" class="signform">
+															<p>1.  Nature of Mediation
+																	<br>
+																	<br>
+																	<br>
+																	The parties hereby appoint and retain their assigned mediator as mediator for their negotiations. The parties understand that mediation is an agreement-reaching process in which the mediator assists parties to reach agreement in a collaborative, consensual and informed manner. It is understood that the mediator has no power to decide disputed issues for the parties. The parties understand that the mediator's objective is to facilitate the parties themselves reaching their best agreement. The parties also understand that the mediator has an obligation to work on behalf of all parties and that the mediator cannot render individual legal advice to any party and will not render therapy nor arbitrate within the mediation.
+																	<br>
+																	<br>
+																	<br>
+																	2.  Scope of Mediation
+																	<br>
+																	<br>
+																	<br>
+																	The parties understand that it is for the parties, with the mediator's concurrence, to determine the scope of the mediation and this will be accomplished early in the mediation process.
+																	<br>
+																	<br>
+																	<br>
+																	3.  Mediation is Voluntary
+																	<br>
+																	<br>
+																	<br>
+																	All parties here state their good faith intention to complete their mediation by an agreement. It is, however, understood that any party withdraw from or suspend the mediation process at any time, for any reason or no reason.
+																	
+																	The parties also understand that the mediator may suspend or terminate the mediation, if the mediator feels that the mediation will lead to an unreasonable result, if the mediator feels that an impasse has been reached, or if the mediator determines that he can no long effectively perform his facilitative role.
+																	<br>
+																	<br>
+																	<br>
+																	4.  Confidentiality
+																	<br>
+																	<br>
+																	<br>
+																	It is understood between the parties and the mediator that the mediation will be strictly confidential. The parties further agree to not call the mediator to testify concerning the mediation nor to provide any materials from the mediation in any court or other contested proceeding between the parties. The mediation is considered by the parties and the mediator as settlement negotiations. All parties also understand and agree that the mediator may have private caucus meetings and discussions with any individual party, in which case all such meetings and discussions shall be confidential between the mediator and the caucusing party(ies), unless the parties agree otherwise.
+																	<br>
+																	<br>
+																	<br>
+																	5.  Mediator Impartiality and Neutrality
+																	<br>
+																	<br>
+																	<br>
+																	The parties understand that the mediator must remain impartial throughout and after the mediation process. Thus, the mediator will not champion the interests of any party over another in the mediation nor in any court or other proceeding. The mediator is to be impartial as to party and neutral as to the results of the mediation. The mediator will seek to affirmatively reveal any operative biases and will disclose any and all prior contacts with the parties.</p>
+														<h3 class="makeBold">Full Name </h3>
+															<input type="text" placeholder="Full Name" name="fullname" class="inputbox">
+															<input type="date" placeholder="Date" name="date" class="inputbox">
+															<br>
+															<button type="submit" class="genric-btn primary circle">Submit Application</button>
+													</div>
+												</form>
+													</div>
+												</div>
+										</section>  
 							</div>
 						</div>
 					</div>

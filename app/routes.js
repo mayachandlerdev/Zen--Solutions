@@ -11,6 +11,10 @@ module.exports = function(app, passport, db, ObjectID) {
     res.render("mediatorapp.ejs");
   });
 
+  app.get("/mission", function(req, res) {
+    res.render("mission.ejs");
+  });
+
   // CLIENT LOG IN =========================
   app.get("/signup", function(req, res) {
     res.render("signup.ejs");
@@ -178,6 +182,22 @@ module.exports = function(app, passport, db, ObjectID) {
         console.log("error", err);
         console.log("result", res);
         res.redirect("/mediatorapp");
+      }
+    );
+  });
+
+  app.post("/agreement", (req, res) => {
+    return db.collection("agreement").insertOne(
+      {
+        fullname: req.body.fullname,
+        date: req.body.date
+      },
+      {},
+      (err, result) => {
+        if (err) return res.send(err);
+        console.log("error", err);
+        console.log("result", res);
+        res.redirect("/");
       }
     );
   });
