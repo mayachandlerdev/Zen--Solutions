@@ -1,13 +1,17 @@
-## Installation
+# Zen-Solutions
 
-1. Clone repo
-2. run `npm install`
+![alt text](mediationcoverphoto.jpg)
 
-## Usage
+I have created Zen Solutions (a full stack application) with HTML, CSS, JS, NODE.JS and MongoDB. 
 
-1. run `node server.js`
-2. Navigate to `localhost:8080`
+Zen Solutions is an online solutions handler aka online mediation. 
 
-## Credit
+I have created this application due to my passion and history with mediation. You can apply to be a mediator, sign in and sign out (as a client or mediator). 
 
-Modified from Scotch.io's auth tutorial
+Both parties are able to take notes and handle appointment requests. 
+
+DISCLAIMER:
+
+I plan to add more and there are some aspects that I am contemplating adding! 
+
+Happy Mediating :)
